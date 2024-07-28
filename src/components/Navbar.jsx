@@ -1,6 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
+    const navigate=useNavigate()
+
+    const Logout=()=>{
+        sessionStorage.clear()
+        navigate("/")
+    }
   return (
     <div>
 
@@ -20,7 +27,7 @@ const Navbar = () => {
           <a class="nav-link" href="viewall">View All post</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">View My post</a>
+         <button onClick={Logout} className="btn btn-success">Log out</button>
         </li>
        
       </ul>
