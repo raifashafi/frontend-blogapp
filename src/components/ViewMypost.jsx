@@ -46,7 +46,7 @@ useEffect(()=>{fetchData()},[])
                                             <div class="card-body">
                                                 <h5 class="card-title">{value.Message}</h5>
                                               
-                                                <p class="card-text"><small class="text-body-secondary">posted on {value.postedDate}</small></p>
+                                                <p class="card-text"><small class="text-body-secondary">posted on {value.postedDatet }</small></p>
                                             </div>
                                         </div>
                                     </div>
